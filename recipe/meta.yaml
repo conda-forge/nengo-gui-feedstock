@@ -1,5 +1,5 @@
 {% set name = "nengo-gui" %}
-{% set version = "0.4.9" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nengo-gui-{{ version }}.tar.gz
-  sha256: 47ede1644f4aa1e44b12a46c78c539a4496a91b3883cf80c1a66cce7c9e49a00
+  sha256: 58ea7d7ff1a4aab60490d0af44459555c13672d213a8fd2090f6e259e7dbbc83
   patches:
     - fix-python-3-8-and-higher.patch
 
