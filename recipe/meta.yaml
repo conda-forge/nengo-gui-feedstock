@@ -23,6 +23,7 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - nengo >=2.6.0
