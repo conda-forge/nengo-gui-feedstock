@@ -1,5 +1,5 @@
 {% set name = "nengo-gui" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nengo-gui-{{ version }}.tar.gz
-  sha256: 58ea7d7ff1a4aab60490d0af44459555c13672d213a8fd2090f6e259e7dbbc83
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: c5be73fed157e0446ed271799d2fe1faf98a82853cd2a4f40d7b948ec305ea2e
   patches:
     - fix-python-3-8-and-higher.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - nengo_gui = nengo_gui:old_main
